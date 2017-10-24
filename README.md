@@ -7,8 +7,13 @@ bluetooth receiver using I2S
 ## 接続
 
 ESP32-DevKitC　→　PHAT DAC 
+
 5V　→　5V 
+
 GND　→　GND 
+
 IO26 →　BITCLOCK(GPIO18) 
+
 IO25 →　LRCLOCL(GPIO19) 
+
 IO27 →　DATAIN(GPIO20) 

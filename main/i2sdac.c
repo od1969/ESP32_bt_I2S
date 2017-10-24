@@ -31,7 +31,8 @@ void i2sdac_init()
   i2s_config.sample_rate = SAMPLE_RATE ;
   i2s_config.bits_per_sample = I2S_BITS_PER_SAMPLE_16BIT;
   i2s_config.channel_format = I2S_CHANNEL_FMT_RIGHT_LEFT;
-  i2s_config.communication_format = I2S_COMM_FORMAT_I2S | I2S_COMM_FORMAT_I2S_MSB;
+  i2s_config.communication_format = I2S_COMM_FORMAT_I2S | I2S_COMM_FORMAT_I2S_LSB; //PT8211
+//  i2s_config.communication_format = I2S_COMM_FORMAT_I2S | I2S_COMM_FORMAT_I2S_MSB; //PCM5102A
   i2s_config.dma_buf_count = DMA_BUF_COUNT;
   i2s_config.dma_buf_len = DMA_BUF_LEN; 
   i2s_config.intr_alloc_flags = ESP_INTR_FLAG_LEVEL1;
